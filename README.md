@@ -17,3 +17,10 @@
 - Timer method scheduledTimer() and invalidate()
 
 ![](resource/2.gif)
+
+## 03 Local Video
+- learn AVPlayer and AVPlayerViewController
+- learn present method to push ViewController (diffrent from UINavigationController.pushViewController)
+- learn customize UITableViewCell
+
+![](resource/3.gif)

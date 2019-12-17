@@ -24,3 +24,9 @@
 - learn customize UITableViewCell
 
 ![](resource/3.gif)
+
+## 04 Carousel Effect
+- learn UICollectionView and customize UICollectionViewCell
+- use UIVisualEffectView 
+- know protocol UICollectionViewDelegateFlowLayout and UIScrollViewDelegate
+![](resource/4.gif)

@@ -68,4 +68,5 @@ Unfortunately for me, i don't like StoryBoard.The project is not all built with 
 - view.layer.addSubLayer(AVPlayerLayer)
 - learn NotificationCenter and register observers
 - know about AVPlayerItem and AVPlayerLayer
+
 ![](resource/9.gif)

@@ -1,6 +1,7 @@
 # iOS Swift Project
 
-In github , i found a wonderful project --- [30DaysofSwift Project](https://github.com/allenwong/30DaysofSwift).
+In github, i found a wonderful project --- [30DaysofSwift Project](https://github.com/allenwong/30DaysofSwift).
+
 Unfortunately for me, i don't like StoryBoard.The project is not all built with code. The structure of StoryBoard confused me when I was studying, so I followed his project to refactor and add my own elements.
 
 ![](resource/cover.png)
@@ -61,3 +62,10 @@ Unfortunately for me, i don't like StoryBoard.The project is not all built with 
 - learn UIScrollViewDelegate (use viewForZooming method and minimumZoomScale, maximumZoomScale)
 
 ![](resource/8.gif)
+
+
+## 09 VideoBackground
+- view.layer.addSubLayer(AVPlayerLayer)
+- learn NotificationCenter and register observers
+- know about AVPlayerItem and AVPlayerLayer
+![](resource/9.gif)

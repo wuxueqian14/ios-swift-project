@@ -70,3 +70,9 @@ Unfortunately for me, i don't like StoryBoard.The project is not all built with 
 - know about AVPlayerItem and AVPlayerLayer
 
 ![](resource/9.gif)
+
+## 10 ClearCell
+- review CAGradientLayer and UITableView
+- set navifationBar.barStyle and navigationBar.titleTextAttributes
+
+![](resource/10.gif)

@@ -1,9 +1,9 @@
 //
 //  SceneDelegate.swift
-//  gdfgd
+//  Project 10 - ClearCell
 //
-//  Created by 吴学谦 on 2019/12/21.
-//  Copyright © 2019 Ryan.com. All rights reserved.
+//  Created by Ryan on 2019/12/28.
+//  Copyright © 2019 Ryan. All rights reserved.
 //
 
 import UIKit

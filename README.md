@@ -6,7 +6,7 @@ Unfortunately for me, i don't like StoryBoard.The project is not all built with 
 
 ## Development environment
 
-Xcode Version 11.3 (11C29) And Swift 4.0
+Xcode Version 11.3 (11C29) And Swift 5.0
 
 Because i don't like StoryBoard，so I removed Main.storyboard from the file and in Info.plist modify related options.
 
@@ -86,3 +86,5 @@ Because i don't like StoryBoard，so I removed Main.storyboard from the file and
 ## 11 Login Animation
 - study UIView.animate 
 - learn about present and dismiss method
+
+![](resource/11.gif)

@@ -93,3 +93,5 @@ Because i don't like StoryBoard，so I removed Main.storyboard from the file and
 ## 12 Animate TableViewCell
 - review animate and connect tableViewCell
 - review Clear style about Cell
+
+![](resource/12.gif)

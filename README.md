@@ -88,3 +88,8 @@ Because i don't like StoryBoard，so I removed Main.storyboard from the file and
 - learn about present and dismiss method
 
 ![](resource/11.gif)
+
+
+## 12 Animate TableViewCell
+- review animate and connect tableViewCell
+- review Clear style about Cell

@@ -95,3 +95,8 @@ Because i don't like StoryBoard，so I removed Main.storyboard from the file and
 - review Clear style about Cell
 
 ![](resource/12.gif)
+
+## 13 Emoji Slot Machine
+- study UIPickerView and UIPickerViewDataSource UIPickerViewDelegate
+
+![](resource/13.gif)

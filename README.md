@@ -99,4 +99,4 @@ Because i don't like StoryBoard，so I removed Main.storyboard from the file and
 ## 13 Emoji Slot Machine
 - study UIPickerView and UIPickerViewDataSource UIPickerViewDelegate
 
-![](resource/13.gif =300*500)
+![](resource/13.gif)

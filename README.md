@@ -1,7 +1,9 @@
 # iOS Swift Project
 
-![](https://img.shields.io/badge/Swift-5.0-important.svg?style=plastic&logo=appveyor)
-![](https://img.shields.io/badge/Xcode-11.3-ff69b4.svg??style=plastic&logo=appveyor)
+![](https://img.shields.io/badge/Swift-5.0-important.svg?style=plastic&logo=swift)
+![](https://img.shields.io/badge/Xcode-11.3-ff69b4.svg??style=plastic&logo=apache)
+![](https://img.shields.io/badge/QQ-1970014719-blue.svg??style=plastic&logo=tencent-qq)
+
 
 ![](resource/cover.png)
 

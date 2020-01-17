@@ -61,8 +61,6 @@ class ViewController: UIViewController {
         self.view.addSubview(pauseButton)
         self.view.addSubview(topLabel)
         self.view.addSubview(resetButton)
-        //topLabel.addSubview(resetButton)
-        //self.view.addSubview(topLabel)
     }
     
     var timer: Timer? = Timer()

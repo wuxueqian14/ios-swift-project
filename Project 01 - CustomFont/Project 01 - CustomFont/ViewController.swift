@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        获取字体族和字体名字
 //        for family in UIFont.familyNames {
 //            print("family : \(family)")
 //            for font in UIFont.fontNames(forFamilyName: family) {

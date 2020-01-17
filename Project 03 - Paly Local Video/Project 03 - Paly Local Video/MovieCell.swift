@@ -27,15 +27,6 @@ class MovieCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-//    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-//        super.init(style: style, reuseIdentifier: reuseIdentifier)
-//        //add object to contenView
-//        self.contentView.addSubview(backImageView)
-//        self.contentView.addSubview(titleLabel)
-//        self.contentView.addSubview(sourceLabel)
-//        self.contentView.addSubview(button)
-//    }
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         self.contentView.addSubview(backImageView)
@@ -43,10 +34,6 @@ class MovieCell: UITableViewCell {
         self.contentView.addSubview(sourceLabel)
         self.contentView.addSubview(button)
     }
-    
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
     
     lazy var backImageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: 220))

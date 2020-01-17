@@ -1,16 +1,13 @@
 # iOS Swift Project
 
+![](https://img.shields.io/badge/Swift-5.0-important.svg?style=plastic&logo=appveyor)
+![](https://img.shields.io/badge/Xcode-11.3-ff69b4.svg??style=plastic&logo=appveyor)
+
+![](resource/cover.png)
+
 In github, i found a wonderful project --- [30DaysofSwift Project](https://github.com/allenwong/30DaysofSwift).
 
 Unfortunately for me, i don't like StoryBoard.The project is not all built with code. The structure of StoryBoard confused me when I was studying, so I followed his project to refactor and add my own elements.
-
-## Development environment
-
-Xcode Version 11.3 (11C29) And Swift 5.0
-
-Because i don't like StoryBoard，so I removed Main.storyboard from the file and in Info.plist modify related options.
-
-![](resource/cover.png)
 ## 01 CustomFont
 
 - understand UIApplication, UIViewController, UIView all inherit from NSObject

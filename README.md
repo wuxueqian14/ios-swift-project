@@ -1,11 +1,15 @@
 # iOS Swift Project
 
-![](https://img.shields.io/badge/Swift-5.0-important.svg?style=plastic&logo=swift)
-![](https://img.shields.io/badge/Xcode-11.3-ff69b4.svg??style=plastic&logo=apache)
-![](https://img.shields.io/badge/QQ-1970014719-blue.svg??style=plastic&logo=tencent-qq)
+<p align="center">
+<img src="resource/cover.png" width="800"/>
+</p>
 
+<p align="center">
+    <img src="https://img.shields.io/badge/Swift-5.0-important.svg?style=flat&logo=swift"/>
+    <img src="https://img.shields.io/badge/Xcode-11.3-ff69b4.svg??style=flat&logo=apache"/>
+    <img src="https://img.shields.io/badge/QQ-1970014719-blue.svg??style=flat&logo=tencent-qq"/>
+</p>
 
-![](resource/cover.png)
 
 In github, i found a wonderful project --- [30DaysofSwift Project](https://github.com/allenwong/30DaysofSwift).
 

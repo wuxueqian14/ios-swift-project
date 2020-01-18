@@ -1,7 +1,5 @@
-# iOS Swift Project
-
 <p align="center">
-<img src="resource/cover.png" width="800"/>
+<img src="resource/cover.png" width="600" height="370"/>
 </p>
 
 <p align="center">
@@ -97,7 +95,9 @@ Unfortunately for me, i don't like StoryBoard.The project is not all built with 
 - review animate and connect tableViewCell
 - review Clear style about Cell
 
-![](resource/12.gif)
+<p align="left">
+<img src="resource/12.gif" width="415" height="900"/>
+</p>
 
 ## 13 Emoji Slot Machine
 - study UIPickerView and UIPickerViewDataSource UIPickerViewDelegate

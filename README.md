@@ -20,28 +20,36 @@ Unfortunately for me, i don't like StoryBoard.The project is not all built with 
 - learn addTarget method (object connect with communicate event)
 - using UITableViewDataSource, UITableViewDelegate protocols and their methods.
 
-![](resource/1.gif)
+<p align="left">
+<img src="resource/1.gif" width="415" height="900"/>
+</p>
 
 ## 02 Stop Watch
 - learn willSet and didSet property observer
 - review addTarget method
 - Timer method scheduledTimer() and invalidate()
 
-![](resource/2.gif)
+<p align="left">
+<img src="resource/2.gif" width="415" height="900"/>
+</p>
 
 ## 03 Local Video
 - learn AVPlayer and AVPlayerViewController
 - learn present method to push ViewController (diffrent from UINavigationController.pushViewController)
 - learn customize UITableViewCell
 
-![](resource/3.gif)
+<p align="left">
+<img src="resource/3.gif" width="415" height="900"/>
+</p>
 
 ## 04 Carousel Effect
 - learn UICollectionView and customize UICollectionViewCell
 - use UIVisualEffectView 
 - know protocol UICollectionViewDelegateFlowLayout and UIScrollViewDelegate
 
-![](resource/4.gif)
+<p align="left">
+<img src="resource/4.gif" width="415" height="900"/>
+</p>
 
 
 ## 05 Find Position
@@ -49,26 +57,34 @@ Unfortunately for me, i don't like StoryBoard.The project is not all built with 
 - know about CLLocationManagerDelegate protocol
 - CLLocation convert CLGeocoder
 
-![](resource/5.png)
+<p align="left">
+<img src="resource/5.gif" width="415" height="900"/>
+</p>
 
 ## 06 PushToRefresh
 - learn UIRefreshControl
 - learn append data and reload tableView
 - use NSAttributedString to change text style
 
-![](resource/6.gif)
+<p align="left">
+<img src="resource/6.gif" width="415" height="900"/>
+</p>
 
 ## 07 Random Color Gradient
 - learn AVAudioPlayer import from AVFoundation 
 - use gradientLayer and drand48()
 
-![](resource/7.gif)
+<p align="left">
+<img src="resource/7.gif" width="415" height="900"/>
+</p>
 
 ## 08 ImageScroller
 - learn UIScrollView
 - learn UIScrollViewDelegate (use viewForZooming method and minimumZoomScale, maximumZoomScale)
 
-![](resource/8.gif)
+<p align="left">
+<img src="resource/8.gif" width="415" height="900"/>
+</p>
 
 
 ## 09 VideoBackground
@@ -76,19 +92,25 @@ Unfortunately for me, i don't like StoryBoard.The project is not all built with 
 - learn NotificationCenter and register observers
 - know about AVPlayerItem and AVPlayerLayer
 
-![](resource/9.gif)
+<p align="left">
+<img src="resource/9.gif" width="415" height="900"/>
+</p>
 
 ## 10 ClearCell
 - review CAGradientLayer and UITableView
 - set navifationBar.barStyle and navigationBar.titleTextAttributes
 
-![](resource/10.gif)
+<p align="left">
+<img src="resource/10.gif" width="415" height="900"/>
+</p>
 
 ## 11 Login Animation
 - study UIView.animate 
 - learn about present and dismiss method
 
-![](resource/11.gif)
+<p align="left">
+<img src="resource/11.gif" width="415" height="900"/>
+</p>
 
 
 ## 12 Animate TableViewCell
@@ -102,4 +124,6 @@ Unfortunately for me, i don't like StoryBoard.The project is not all built with 
 ## 13 Emoji Slot Machine
 - study UIPickerView and UIPickerViewDataSource UIPickerViewDelegate
 
-![](resource/13.gif)
+<p align="left">
+<img src="resource/13.gif" width="415" height="900"/>
+</p>

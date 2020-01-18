@@ -1,51 +1,55 @@
 //
-//  CustomCell.swift
+//  ModelCollectionViewCell.swift
 //  Project 04 - Carousel Effect
 //
-//  Created by 吴学谦 on 2019/12/17.
-//  Copyright © 2019 Ryan.com. All rights reserved.
+//  Created by Ryan on 2020/1/18.
+//  Copyright © 2020 Ryan. All rights reserved.
 //
 
 import UIKit
 
 class CustomCell: UICollectionViewCell {
+    
     lazy var imageView: UIImageView = {
-        let imageView = UIImageView(frame: CGRect(x: 20, y: 0, width: 300, height: 400))
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        return imageView
+        let image = UIImageView(frame: CGRect(x: 20, y: 10, width: 350, height: 350))
+        image.layer.cornerRadius = 10
+        image.layer.masksToBounds = true
+        return image
     }()
     
-    lazy var effectView : UIVisualEffectView = {
-        let effect = UIBlurEffect(style: UIBlurEffect.Style.extraLight)
-        let effectView = UIVisualEffectView(effect: effect)
-        effectView.frame = CGRect(x: 20, y: 400, width: 300, height: 60)
-        return effectView
-    }()
-    
-    lazy var label: UILabel = {
-        let label = UILabel(frame: CGRect(x: 20, y: 400, width: 300, height: 60))
-        label.textAlignment = .left
-        label.font = UIFont.systemFont(ofSize: 16)
-        
+    lazy var infoLabel: UILabel = {
+        let label = UILabel(frame: CGRect(x: 20, y: 360, width: 350, height: 40))
+        label.layer.cornerRadius = 10
+        label.backgroundColor = .clear
         return label
     }()
     
-    var info: CellInfo! {
+    lazy var effectView: UIVisualEffectView = {
+        let effect = UIBlurEffect(style: UIBlurEffect.Style.light)
+        let effectView = UIVisualEffectView(effect: effect)
+        effectView.frame = CGRect(x: 20, y: 360, width: 350, height: 40)
+        effectView.layer.masksToBounds = true
+        effectView.layer.cornerRadius = 5
+        return effectView
+    }()
+    
+    var info: Model! {
         didSet {
-            updateUI()
+            update()
         }
     }
     
-    fileprivate func updateUI() {
+    fileprivate func update() {
         imageView.image = info.image
-        label.text = info.title
+        infoLabel.text = info.info
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        contentView.addSubview(imageView)
-        contentView.addSubview(effectView)
-        contentView.addSubview(label)
+        self.layer.cornerRadius = 10
+        self.contentView.layer.cornerRadius = 10
+        self.contentView.addSubview(imageView)
+        self.contentView.addSubview(effectView)
+        self.contentView.addSubview(infoLabel)
     }
 }

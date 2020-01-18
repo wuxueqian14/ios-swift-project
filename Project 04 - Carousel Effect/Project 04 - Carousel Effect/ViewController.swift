@@ -2,19 +2,30 @@
 //  ViewController.swift
 //  Project 04 - Carousel Effect
 //
-//  Created by 吴学谦 on 2019/12/17.
-//  Copyright © 2019 Ryan.com. All rights reserved.
+//  Created by Ryan on 2020/1/18.
+//  Copyright © 2020 Ryan. All rights reserved.
 //
 
 import UIKit
-
 let frame = UIScreen.main.bounds
 let ScreenWidth = frame.width
 let ScreenHeight = frame.height
 
 class ViewController: UIViewController {
     
-    lazy var effectView : UIVisualEffectView = {
+    fileprivate let id = "reusedCell"
+    
+    let data = Model.creatModelArray()
+    
+    lazy var backImgView: UIImageView = {
+        let imageView = UIImageView(frame: frame)
+        let image = #imageLiteral(resourceName: "blue")
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        return imageView
+    }()
+    
+    lazy var effectView: UIVisualEffectView = {
         let effect = UIBlurEffect(style: UIBlurEffect.Style.light)
         let effectView = UIVisualEffectView(effect: effect)
         effectView.frame = frame
@@ -22,35 +33,20 @@ class ViewController: UIViewController {
     }()
     
     lazy var collectionView: UICollectionView = {
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.scrollDirection = .horizontal
-        let collectionView = UICollectionView(frame: CGRect(x: 20, y: 150, width: ScreenWidth - 40, height: 493), collectionViewLayout: flowLayout)
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let collectionView = UICollectionView(frame: CGRect(x: ScreenWidth / 2 - 195, y: ScreenHeight / 2 - 220, width: 390, height: 440), collectionViewLayout: layout)
+        collectionView.backgroundColor = .clear
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(CustomCell.self, forCellWithReuseIdentifier: id)
-        collectionView.backgroundColor = .clear
+        collectionView.register(CustomCell.classForCoder(), forCellWithReuseIdentifier: id)
         return collectionView
     }()
-    
-    lazy var backImageView: UIImageView = {
-        let imageView = UIImageView(frame: frame)
-        imageView.image = UIImage(named: "blue")
-        return imageView
-    }()
-    
-    fileprivate var data = CellInfo.createInfos()
-    
-    private let id = "reusedCell"
 
     func setupView() {
-        self.view.backgroundColor = .white
-        self.view.addSubview(backImageView)
+        self.view.addSubview(backImgView)
         self.view.addSubview(effectView)
         self.view.addSubview(collectionView)
-    }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
     }
     
     override func viewDidLoad() {
@@ -62,7 +58,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UICollectionViewDataSource{
+extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
     }
@@ -77,23 +73,21 @@ extension ViewController: UICollectionViewDataSource{
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: ScreenWidth - 2 * 20, height: 450)
+        return CGSize(width: 390, height: 420)
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 2 * 20
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        return 20
     }
 }
 
-
 extension ViewController: UIScrollViewDelegate {
+    //Tells the delegate when the user finishes scrolling the content.
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let originPoint = targetContentOffset.pointee
         var index = Int(originPoint.x / ScreenWidth)
         let offset = Int(originPoint.x) % Int(ScreenWidth)
-        index += (offset > Int(ScreenWidth/2) ? 1 : 0)
+        index += (offset > Int(ScreenWidth/2)) ? 1 : 0
         targetContentOffset.pointee = CGPoint(x: index * Int(ScreenWidth), y: 0)
     }
 }

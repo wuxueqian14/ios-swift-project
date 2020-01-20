@@ -31,8 +31,6 @@ class ViewController: UIViewController {
     
     func setupView() {
         self.view.addSubview(imageView)
-        imageView.setNeedsLayout()
-        imageView.layoutIfNeeded()
         imageView.layer.mask = self.mask
         animateMask()
     }
@@ -43,11 +41,6 @@ class ViewController: UIViewController {
         keyFrameAnimation.duration = 0.5
         keyFrameAnimation.beginTime = CACurrentMediaTime() + 0.5
         keyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut), CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)]
-        do {
-            // 动画需要加上这段代码，否则会造成页面闪一下
-            keyFrameAnimation.fillMode = CAMediaTimingFillMode.forwards
-            keyFrameAnimation.isRemovedOnCompletion = false
-        }
         let initalBounds = NSValue(cgRect: self.mask.bounds)
         let secondBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 90*0.9, height: 73*0.9))
         let finalBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 1600, height: 1300))

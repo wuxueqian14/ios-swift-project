@@ -148,3 +148,12 @@ Unfortunately for me, i don't like StoryBoard.The project is not all built with 
 <p align="left">
 <img src="resource/14.gif" width="231" height="500"/>
 </p>
+
+## 15 SlideMenu
+
+- understand custom present transition animation 
+- UIViewControllerAnimatedTransitioning and UIViewControllerTransitioningDelegate is really imporant
+
+<p align="left">
+<img src="resource/15.gif" width="231" height="500"/>
+</p>

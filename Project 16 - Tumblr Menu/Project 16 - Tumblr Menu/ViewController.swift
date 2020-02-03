@@ -14,6 +14,8 @@ let ScreenHeight = Frame.height
 
 class ViewController: UIViewController {
     
+    fileprivate let id = "reusedCell"
+    
     lazy var backImageView: UIImageView = {
         let imageView = UIImageView(frame: Frame)
         let image = #imageLiteral(resourceName: "background")
@@ -35,9 +37,19 @@ class ViewController: UIViewController {
         present(toVC, animated: true, completion: nil)
     }
     
+    lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight - 100))
+        tableView.backgroundColor = .clear
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(CustomCell.classForCoder(), forCellReuseIdentifier: id)
+        return tableView
+    }()
+    
     func setupView() {
         view.addSubview(backImageView)
         view.addSubview(button)
+        view.addSubview(tableView)
     }
 
     override func viewDidLoad() {
@@ -64,5 +76,29 @@ extension ViewController: UIViewControllerTransitioningDelegate {
             return nil
         }
         return DismissAnimationController()
+    }
+}
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: id, for: indexPath) as! CustomCell
+        if indexPath.row == 0 {
+            cell.leftTopImageView.image = #imageLiteral(resourceName: "hugo")
+            cell.nameLabel.text = "Bean"
+            cell.backImageView.image = #imageLiteral(resourceName: "2")
+        } else {
+            cell.leftTopImageView.image = #imageLiteral(resourceName: "mengto")
+            cell.nameLabel.text = "Kran"
+            cell.backImageView.image = #imageLiteral(resourceName: "1")
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300
     }
 }

@@ -157,3 +157,12 @@ Unfortunately for me, i don't like StoryBoard.The project is not all built with 
 <p align="left">
 <img src="resource/15.gif" width="231" height="500"/>
 </p>
+
+## 15 Tumblr Menu
+
+- review custom cell, transition and UIVisualEffectView
+- learn about CGAffineTransform
+
+<p align="left">
+<img src="resource/16.gif" width="231" height="500"/>
+</p>

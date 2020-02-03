@@ -14,6 +14,7 @@
 		947264D023E86C3B00564F5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947264CF23E86C3B00564F5B /* MenuViewController.swift */; };
 		947264D223E8709100564F5B /* PresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947264D123E8709100564F5B /* PresentAnimationController.swift */; };
 		947264D423E8777A00564F5B /* DismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947264D323E8777A00564F5B /* DismissAnimationController.swift */; };
+		947264D823E87B3900564F5B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947264D723E87B3900564F5B /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		947264CF23E86C3B00564F5B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		947264D123E8709100564F5B /* PresentAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentAnimationController.swift; sourceTree = "<group>"; };
 		947264D323E8777A00564F5B /* DismissAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissAnimationController.swift; sourceTree = "<group>"; };
+		947264D723E87B3900564F5B /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				947264CE23E86A1400564F5B /* Animation Controllers */,
 				947264BA23E8691400564F5B /* AppDelegate.swift */,
+				947264D723E87B3900564F5B /* CustomCell.swift */,
 				947264BE23E8691400564F5B /* ViewController.swift */,
 				947264CF23E86C3B00564F5B /* MenuViewController.swift */,
 				947264C323E8691600564F5B /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 				947264BF23E8691400564F5B /* ViewController.swift in Sources */,
 				947264D023E86C3B00564F5B /* MenuViewController.swift in Sources */,
 				947264BB23E8691400564F5B /* AppDelegate.swift in Sources */,
+				947264D823E87B3900564F5B /* CustomCell.swift in Sources */,
 				947264D423E8777A00564F5B /* DismissAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

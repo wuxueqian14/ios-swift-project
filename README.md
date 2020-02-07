@@ -174,3 +174,12 @@ Unfortunately for me, i don't like StoryBoard.The project is not all built with 
 <p align="left">
 <img src="resource/17.gif" width="231" height="500"/>
 </p>
+
+
+## 18 CollectionCellAnimation
+
+- review transition animation and style like App Store Card animation
+
+<p align="left">
+<img src="resource/18.gif" width="231" height="500"/>
+</p>

@@ -11,7 +11,8 @@
 
 In github, i found a wonderful project --- [30DaysofSwift Project](https://github.com/allenwong/30DaysofSwift).
 
-Unfortunately for me, i don't like StoryBoard.The project is not all built with code. The structure of StoryBoard confused me when I was studying, so I followed his project to refactor and add my own elements.
+That project is not all built with code. In my pointview, StoryBoard has many disadvantage.StoryBoard will hide the properties of many controls. Reading by others will cause a lot of problems, which is not conducive to code sharing. It is also a problem in teamwork.The structure of StoryBoard confused me when I was studying, so I followed his project to refactor and add my own elements by pure Swift code.
+
 ## 01 CustomFont
 
 - understand UIApplication, UIViewController, UIView all inherit from NSObject
